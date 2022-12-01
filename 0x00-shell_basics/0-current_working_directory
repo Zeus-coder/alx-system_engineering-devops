@@ -1,2 +1,2 @@
 #!/bin/bash
-path=$(which ls) echo ‘The absolute path is’ $path
+full_path=$(realpath $0) echo $full_path
