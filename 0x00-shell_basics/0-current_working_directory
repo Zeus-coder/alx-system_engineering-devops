@@ -1,2 +1,2 @@
 #!/bin/bash
-full_path=$(realpath $0) echo $full_path
+ABS_SCRIPT_PATH="$(realpath "${SCRIPT_PATH}")" echo "Value of ABS_SCRIPT_PATH: ${ABS_SCRIPT_PATH}"
