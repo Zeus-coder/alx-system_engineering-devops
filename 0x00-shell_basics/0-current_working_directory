@@ -1,3 +1,2 @@
 #!/bin/bash 
-path=$DIR_PATH/$(basename “${BASH_SOURCE:-$0}”)
-echo ‘The absolute path is’ $path
+path=$DIR_PATH/$(basename “${BASH_SOURCE:-$0}”) echo ‘The absolute path is’ $path
