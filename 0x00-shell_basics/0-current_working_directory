@@ -1,7 +1,9 @@
 #!/bin/bash
 
-path=’readlink -f “${BASH_SOURCE:-$0}”’
+DIR_PATH=$(cd $(dirname “${BASH_SOURCE:-$0}”) && pwd)
 
-DIR_PATH=’dirname $path’
+path=$DIR_PATH/$(basename “${BASH_SOURCE:-$0}”)
 
 echo ‘The absolute path is’ $path
+echo ‘----------------------------------’
+echo ‘The directory path is’ $DIR_PATH
