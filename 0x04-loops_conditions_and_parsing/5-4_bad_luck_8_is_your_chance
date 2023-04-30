@@ -1,21 +1,18 @@
 #!/usr/bin/env bash
-# a Bash script that loops from 1 to 10
+# A script that loops through 1 to 10 using while
 
+i=1
 
-# Loop from 1 to 10
-for i in {1..10}
+while [ $i -le 10 ]
 do
-    # Check if i is equal to 4
     if [ $i -eq 4 ]
     then
-        echo "Bad luck"
-    # Check if i is equal to 8
+        echo "bad luck"
     elif [ $i -eq 8 ]
     then
-        echo "Good luck"
-    # For all other iterations, print Best School
+        echo "good luck"
     else
         echo "Best School"
     fi
+    ((i++))
 done
-
