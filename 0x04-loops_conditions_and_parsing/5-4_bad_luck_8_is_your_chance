@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# a Bash script that loops from 1 to 10
+
+
+# Loop from 1 to 10
+for i in {1..10}
+do
+    # Check if i is equal to 4
+    if [ $i -eq 4 ]
+    then
+        echo "Bad luck"
+    # Check if i is equal to 8
+    elif [ $i -eq 8 ]
+    then
+        echo "Good luck"
+    # For all other iterations, print Best School
+    else
+        echo "Best School"
+    fi
+done
+
